@@ -1,0 +1,30 @@
+<!-- employee-table.component.html -->
+<div class="container">    
+<div class="table-container">
+    <h2 class="title">Employee Management System</h2>
+<table>
+    <thead>
+      <tr>
+        <th style="min-width: 200px;">Name</th> 
+        <th style="min-width: 100px;">Total Time in Month</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees" [ngClass]="{'highlight': employee.totalTimeWorked < 100}">
+        <td>{{ employee.employeeName }}</td>
+        <td>{{ roundHours(employee.totalTimeWorked) }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <!--<div class="chart-container">
+    <canvas id="pie-chart"></canvas>
+    <div class="chart-container">
+    <canvas #pieChartCanvas></canvas>   
+  </div>
+  </div>-->
+  
+  <div class="chart-container">
+    <canvas id="pieChartCanvas"></canvas>
+  </div>
+</div>

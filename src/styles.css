@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh; 
+  }
+  
+  .table-container {
+    width: 80%; 
+    max-width: 800px; 
+  }
+  
